@@ -2,7 +2,9 @@ describe('Starter lint/format API tests', () => {
   it('GET / returns welcome message', () => {
     cy.request('/').then((response) => {
       expect(response.status).to.eq(200);
-      expect(response.body.message).to.eq('Welcome to the starter lint/format API');
+      expect(response.body.message).to.eq(
+        'Welcome to the starter lint/format API'
+      );
     });
   });
 
